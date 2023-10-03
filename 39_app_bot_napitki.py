@@ -14,15 +14,15 @@ dp = Dispatcher(bot)
 class Keyboard_Main(ReplyKeyboardMarkup):
     def __init__(self):
         super().__init__(resize_keyboard=True, one_time_keyboard=True)
-        self.add(KeyboardButton('Напитки'))
-        self.add(KeyboardButton('Закуски'))
+        self.add(KeyboardButton('Drink'))
+        self.add(KeyboardButton('Food'))
 
 class KeyboardDrink(ReplyKeyboardMarkup):
     def __init__(self):
         super().__init__(resize_keyboard=True, one_time_keyboard=True)
-        self.insert(KeyboardButton('Сок'))
-        self.insert(KeyboardButton("Газировка"))
-        self.add(KeyboardButton('Назад'))
+        self.insert(KeyboardButton('Juice'))
+        self.insert(KeyboardButton("sparkly water"))
+        self.add(KeyboardButton('Return'))
 
 class KeyboardSnack(ReplyKeyboardMarkup):
     def __init__(self):
