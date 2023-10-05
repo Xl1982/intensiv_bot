@@ -1,4 +1,4 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 # button1 = KeyboardButton('Привет')
 
 # kb = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -29,3 +29,15 @@ kb4 = ReplyKeyboardMarkup(resize_keyboard=True).add(
 )
 
 
+kb5 = ReplyKeyboardMarkup()
+kb5.add(
+    button1, button2, button3, button4, button5, button6
+)
+kb5.row(
+    button1, button2, button3, button4, button5, button6
+)
+kb5.row(button4, button2)
+kb5.add(button3, button2)
+kb5.insert(button1)
+kb5.insert(button6)
+kb5.insert(KeyboardButton('9'))
